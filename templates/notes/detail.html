@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="mb-3">
+    <a href="{% url 'notes_list' %}" class="btn btn-outline-secondary me-2">← Назад к списку</a>
+    <a href="{% url 'note_edit' note.id %}" class="btn btn-warning me-2">✏️ Редактировать</a>
+    <a href="{% url 'note_delete' note.id %}" class="btn btn-danger">🗑️ Удалить</a>
+</div>
+
+<div class="card shadow-sm">
+    <div class="card-body">
+        <h3 class="card-title">{{ note.title }}</h3>
+        <p class="card-text" style="white-space: pre-line;">{{ note.body }}</p>
+        <small class="text-muted">Создано: {{ note.created_at|date:"d.m.Y H:i" }}</small>
+    </div>
+</div>
+{% endblock %}
