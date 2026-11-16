@@ -1,33 +1,142 @@
 # 📝 Django Notes App
 
-[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg?logo=python&logoColor=white)](https://www.python.org/)
-[![Django](https://img.shields.io/badge/Django-6.0%2B-092E20.svg?logo=django&logoColor=white)](https://www.djangoproject.com/)
-[![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-7952B3.svg?logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+<p align="center">
+  <a href="#english">English</a> | <a href="#russian">Русский</a>
+</p>
 
-Простое и удобное веб-приложение для управления личными заметками, написанное на **Django** с использованием UI-фреймворка **Bootstrap 5**.
+<p align="center">
+  <a href="https://github.com/X-bot-hash/django-notes-app">
+    <img src="https://img.shields.io/badge/GitHub-Repository-blue?style=for-the-badge&logo=github" alt="GitHub Repository">
+  </a>
+  <a href="https://www.python.org/">
+    <img src="https://img.shields.io/badge/Python-3.10%2B-blue.svg?logo=python&logoColor=white" alt="Python">
+  </a>
+  <a href="https://www.djangoproject.com/">
+    <img src="https://img.shields.io/badge/Django-6.0%2B-092E20.svg?logo=django&logoColor=white" alt="Django">
+  </a>
+  <a href="https://getbootstrap.com/">
+    <img src="https://img.shields.io/badge/Bootstrap-5.3-7952B3.svg?logo=bootstrap&logoColor=white" alt="Bootstrap">
+  </a>
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License">
+  </a>
+</p>
 
----
+<hr>
 
+<details id="english">
+  <summary>English</summary>
+  
+## ✨ Features
+
+- 📋 **List of notes** — sorted by creation date (newest first)
+- ➕ **Create notes** — with field form validation
+- 🔍 **Detailed view** — view full note content and creation date
+- ✏️ **Edit** — change note title and content
+- 🗑️ **Delete** — with confirmation before deletion
+- ⚙️ **Django Admin** — manage notes through the built-in admin panel
+- 🎨 **Modern interface** — responsive design on Bootstrap 5
+
+## 🛠️ Technology Stack
+
+- **Backend:** Python, Django
+- **Frontend:** HTML5, CSS3, Bootstrap 5
+- **Database:** SQLite3
+
+## 📁 Project Structure
+
+```text
+Django/
+├── myproject/          # Main Django project configuration
+│   ├── settings.py     # Project settings
+│   ├── urls.py         # Main URL router
+│   └── ...
+├── notes/              # Notes application
+│   ├── models.py       # Note model (title, body, created_at)
+│   ├── views.py        # CRUD views
+│   ├── forms.py        # Django Form for Note
+│   ├── urls.py         # Application URL patterns
+│   └── ...
+├── templates/          # HTML templates
+│   ├── base.html       # Base template (Bootstrap 5)
+│   └── notes/          # CRUD note templates
+├── manage.py           # Django management utility
+├── requirements.txt    # Project dependencies
+└── README.md           # Project documentation
+```
+
+## 🚀 Quick Start
+
+### 1. Repository Cloning
+
+```bash
+git clone https://github.com/X-bot-hash/django-notes-app.git
+cd django-notes-app
+```
+
+### 2. Create and Activate Virtual Environment
+
+**Windows (PowerShell / CMD):**
+
+```bash
+python -m venv venv
+.env\Scriptsctivate
+```
+
+**Linux / macOS:**
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Apply Migrations
+
+```bash
+python manage.py migrate
+```
+
+### 5. Create Superuser (optional)
+
+For Django admin access:
+
+```bash
+python manage.py createsuperuser
+```
+
+### 6. Run Development Server
+
+```bash
+python manage.py runserver
+```
+
+Open in browser: [http://127.0.0.1:8000/notes/](http://127.0.0.1:8000/notes/)
+</details>
+
+<details id="russian">
+  <summary>Русский</summary>
+  
 ## ✨ Основные возможности
 
-- 📋 **Просмотр списка заметок** — сортировка по дате создания (сначала новые).
-- ➕ **Создание заметок** — с валидацией полей формы.
-- 🔍 **Детальный просмотр** — просмотр полного содержания заметки и даты создания.
-- ✏️ **Редактирование** — изменение заголовка и содержимого заметок.
-- 🗑️ **Удаление заметок** — с подтверждением перед удалением.
-- ⚙️ **Django Admin** — управление заметками через встроенную панель администратора.
-- 🎨 **Современный интерфейс** — адаптивный дизайн на Bootstrap 5.
-
----
+- 📋 **Список заметок** — сортировка по дате создания (сначала новые)
+- ➕ **Создание заметок** — с валидацией полей формы
+- 🔍 **Детальный просмотр** — просмотр полного содержания заметки и даты создания
+- ✏️ **Редактирование** — изменение заголовка и содержимого заметок
+- 🗑️ **Удаление заметок** — с подтверждением перед удалением
+- ⚙️ **Django Admin** — управление заметками через встроенную панель администратора
+- 🎨 **Современный интерфейс** — адаптивный дизайн на Bootstrap 5
 
 ## 🛠️ Технологический стек
 
 - **Backend:** Python, Django
 - **Frontend:** HTML5, CSS3, Bootstrap 5
 - **Database:** SQLite3
-
----
 
 ## 📁 Структура проекта
 
@@ -51,8 +160,6 @@ Django/
 └── README.md           # Документация проекта
 ```
 
----
-
 ## 🚀 Быстрый старт
 
 ### 1. Клонирование репозитория
@@ -65,12 +172,14 @@ cd django-notes-app
 ### 2. Создание и активация виртуального окружения
 
 **Windows (PowerShell / CMD):**
+
 ```bash
 python -m venv venv
-.\venv\Scripts\activate
+.env\Scriptsctivate
 ```
 
 **Linux / macOS:**
+
 ```bash
 python3 -m venv venv
 source venv/bin/activate
@@ -91,6 +200,7 @@ python manage.py migrate
 ### 5. Создание суперпользователя (опционально)
 
 Для доступа к админ-панели Django:
+
 ```bash
 python manage.py createsuperuser
 ```
@@ -102,22 +212,10 @@ python manage.py runserver
 ```
 
 Откройте в браузере: [http://127.0.0.1:8000/notes/](http://127.0.0.1:8000/notes/)
+</details>
 
----
+<hr>
 
-## 📝 Пример использования URL-маршрутов
+## 📄 License
 
-| URL | Метод | Описание |
-|---|---|---|
-| `/notes/` | GET | Список всех заметок |
-| `/notes/create/` | GET, POST | Форма создания заметки |
-| `/notes/<id>/` | GET | Детальная страница заметки |
-| `/notes/<id>/edit/` | GET, POST | Форма редактирования заметки |
-| `/notes/<id>/delete/` | GET, POST | Подтверждение и удаление заметки |
-| `/admin/` | GET, POST | Админ-панель Django |
-
----
-
-## 📄 Лицензия
-
-Этот проект распространяется под лицензией MIT.
+This project is distributed under the MIT License.
